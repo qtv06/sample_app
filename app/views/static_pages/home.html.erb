@@ -2,7 +2,7 @@
   <h1><%= t ".home_h1" %></h1>
   <p><%= t(".p_content", link_home: link_to(t(".title_link"), t(".link_href"))).html_safe %></p>
   <div class="btn-sign-up">
-    <%= link_to t("sign_up"), "#" %>
+    <%= link_to t("sign_up"), new_user_path %>
   </div>
 </div>
 <%= image_tag("logorails.png", alt: t("title_logo"), id: "img-logo") %>
