@@ -1,0 +1,5 @@
+<% provide :title, t(".title_help") %>
+<h1><%= t ".help_h1" %></h1>
+<p><%= t(".p_content", link_rails: link_to(t(".title_link1"), "http://www.railstutorial.org/help"),
+  link_tutorial: link_to(content_tag(:em, t(".title_link2")), "http://www.railstutorial.org/book")).html_safe %>
+</p>
