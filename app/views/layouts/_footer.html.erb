@@ -1,0 +1,13 @@
+<hr>
+<nav class="navbar navbar-buttom" role="navigation">
+  <div class="container">
+    <small><%= t("footer.small_content", first_link: link_to(t(".first_href"), "http://www.railstutorial.org"),
+      second_link: link_to(t(".second_href"), "http://www.michaelhartl.com")).html_safe %>
+    </small>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><%= link_to t("static_pages.about.title_about"), static_pages_about_path %></li>
+      <li><%= link_to t("static_pages.contact.contact_title"), static_pages_contact_path %></li>
+      <li><%= link_to t("static_pages.new.title_new"), "#" %></li>
+    </ul>
+  </div>
+</nav>

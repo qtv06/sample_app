@@ -1,7 +1,9 @@
 <% provide :title, t(".title_about") %>
-<h1><%= t ".about_h1" %></h1>
-<p><%= t(".p_content", link_rails: link_to(content_tag(:em, t(".title_link1")), "http://www.railstutorial.org"),
-  link_book: link_to(t(".title_link2"), "http://www.railstutorial.org/book"),
-  link_screencasts: link_to(t(".title_link3"), "http://screencasts.railstutorial.org"),
-  link_org: link_to(t(".title_link4"), "http://srailstutorial.org")).html_safe %>
-</p>
+<div class="content">
+  <h1><%= t ".about_h1" %></h1>
+  <p><%= t(".p_content", link_rails: link_to(content_tag(:em, t(".title_link1")), "http://www.railstutorial.org"),
+    link_book: link_to(t(".title_link2"), "http://www.railstutorial.org/book"),
+    link_screencasts: link_to(t(".title_link3"), "http://screencasts.railstutorial.org"),
+    link_org: link_to(t(".title_link4"), "http://srailstutorial.org")).html_safe %>
+  </p>
+</div>

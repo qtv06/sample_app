@@ -4,8 +4,18 @@
 en:
   hello: "Hello world"
   base_title: "Ruby on Rails Tutorial Sample App"
+  sign_up: "Sign up now!"
+  login: "Login"
+  title_header: "Sample app"
+  title_logo: "Logo Rails"
+  footer:
+    small_content: "The %{first_link} by %{second_link} %>"
+    first_href: "Ruby on Rails Tutorial"
+    seconde_href: "Michael Hartl"
   static_pages:
     home:
+      title_home: "Home"
+      home_h1: "Welcome to the Sample App"
       p_content: "This is the home page for the %{link_home} sample application."
       title_link: "Ruby on Rails Tutorial"
       link_href: "http://www.railstutorial.org"
@@ -23,3 +33,13 @@ en:
       title_link2: "book"
       title_link3: "screencast series"
       title_link4: "Ruby on Rails"
+    new:
+      title_new: "New"
+    contact:
+      contact_title: "Contact"
+      p_content: "Contact the Ruby on Rails Tutorial about the sample app at the %{link_contact}."
+      title_link: "contact page"
+  users:
+    signup:
+      users_h1: "Sign up"
+      p_content: "This will be a signup page for new users."
