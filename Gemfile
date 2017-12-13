@@ -13,6 +13,8 @@ gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 gem "bootstrap-sass", "~> 3.3", ">= 3.3.7"
 gem "jquery-rails"
+gem "bcrypt", "3.1.11"
+gem "config"
 gem "rubocop", require: false
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
