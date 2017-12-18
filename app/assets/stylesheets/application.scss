@@ -15,3 +15,34 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+aside {
+  section.user_info {
+    width:500px;
+    padding: 5px;
+    h1 {
+      height: 80px;
+      line-height: 80px;
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.gravatar{
+  float: left;
+}

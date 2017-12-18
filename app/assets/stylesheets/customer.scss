@@ -23,8 +23,17 @@ $purple: #9090d2;
   padding: 26px;
   margin-top: 10px;
   border-radius: 6px;
-  height: 300px;
+  height: auto;
   text-align: center;
+  h1 {
+    text-align:center;
+
+  }
+  .form_signup {
+    width: 50%;
+    margin: 0px auto;
+    text-align:left;
+  }
 }
 
 .btn-sign-up {

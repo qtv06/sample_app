@@ -9,7 +9,7 @@ en:
   title_header: "Sample app"
   title_logo: "Logo Rails"
   footer:
-    small_content: "The %{first_link} by %{second_link} %>"
+    small_content: "The %{first_link} by %{second_link}"
     first_href: "Ruby on Rails Tutorial"
     seconde_href: "Michael Hartl"
   static_pages:
@@ -43,3 +43,7 @@ en:
     signup:
       users_h1: "Sign up"
       p_content: "This will be a signup page for new users."
+    flash:
+      success: "Welcome to Sample App"
+      danger: "Have a few errors!"
+      not_found: "User not found!"
