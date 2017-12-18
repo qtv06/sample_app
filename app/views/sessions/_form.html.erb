@@ -1,0 +1,8 @@
+<div class="form_signup">
+  <%= simple_form_for :session, url: login_path do |f| %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+    <%= f.button :submit, class: "btn btn-info" %>
+  <% end %>
+  <p><%= t("users.p_new", link_signup: link_to(t("users.title_signup"), new_user_path)).html_safe %></p>
+</div>

@@ -40,6 +40,7 @@ en:
       p_content: "Contact the Ruby on Rails Tutorial about the sample app at the %{link_contact}."
       title_link: "contact page"
   users:
+    title_user: "User"
     signup:
       users_h1: "Sign up"
       p_content: "This will be a signup page for new users."
@@ -47,3 +48,13 @@ en:
       success: "Welcome to Sample App"
       danger: "Have a few errors!"
       not_found: "User not found!"
+      login_faild: "Your email or password are invalid"
+    p_new: "New user? %{link_signup}"
+    title_signup: "Sign up now!"
+    login:
+      title: "Login"
+    dropmenu:
+      logout: "Logout"
+      settings: "Settings"
+      profile: "Profile"
+      account: "Account"
