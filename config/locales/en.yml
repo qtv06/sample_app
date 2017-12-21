@@ -41,14 +41,23 @@ en:
       title_link: "contact page"
   users:
     title_user: "User"
+    title_edit: "Edit user"
+    title_all_user: "All users"
+    title_delete: "Delete"
+    h1_edit: "Update your profile"
+    span_change: "change"
+    confirm_delete: "Are you sure?"
     signup:
       users_h1: "Sign up"
       p_content: "This will be a signup page for new users."
     flash:
       success: "Welcome to Sample App"
       danger: "Have a few errors!"
+      to_login: "Please log in"
       not_found: "User not found!"
       login_faild: "Your email or password are invalid"
+      update_succ: "Your profile updated"
+      delete_succ: "You deleted successful"
     p_new: "New user? %{link_signup}"
     title_signup: "Sign up now!"
     login:
@@ -58,3 +67,9 @@ en:
       settings: "Settings"
       profile: "Profile"
       account: "Account"
+  helpers:
+    submit:
+      create: "Create user"
+      update: "Update profile"
+  gravatar:
+    link_gravatar: "http://gravatar.com/emails"

@@ -6,7 +6,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :name, presence: true, length: {maximum: Settings.validates.maximum_name}
   validates :password, :password_confirmation, presence: true,
-    length: {minimum: Settings.validates.minimum_pass}
+   length: {minimum: Settings.validates.minimum_pass}, allow_blank: true
   before_save{email.downcase!}
 
   def remember

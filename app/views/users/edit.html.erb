@@ -1,0 +1,11 @@
+<% provide :title, t("users.title_edit") %>
+<div class="content">
+  <h1><%= t "users.h1_edit" %></h1>
+  <%= render "form" %>
+  <div class="row gravater_edit">
+    <div class="col-md-4">
+      <%= gravatar_for @user %>
+      <a href="<%= t "gravatar.link_gravatar"%>" target="_blank"><span><%= t "users.span_change" %></span></a>
+    </div>
+  </div>
+</div>

@@ -4,4 +4,5 @@ validates:
   minimum_pass: 6
 gravatar:
   size: 80
+  size_small: 50
 remember_checked: 1
