@@ -4,10 +4,14 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:session][:email].downcase
     if user && (user.authenticate params[:session][:password])
-      log_in user
-      remember_acc user
-      flash[:success] = I18n.t "users.flash.success"
-      redirect_to user
+      if user.activated?
+        log_in user
+        remember_acc user
+        flash[:success] = I18n.t "users.flash.success"
+        redirect_to user
+      else
+        flash[:danger] = I18n.t "users.flash.messages_activated"
+      end
     else
       flash[:danger] = I18n.t "users.flash.login_faild"
       render :new

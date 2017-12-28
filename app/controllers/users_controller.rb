@@ -21,10 +21,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash.now[:success] = I18n.t "users.flash.success"
-      redirect_to @user
+      @user.send_activated_email
+      flash[:info] = I18n.t "users.flash.info"
+      redirect_to root_url
     else
-      flash.now[:danger] = I18n.t "users.flash.danger"
+      flash[:danger] = I18n.t "users.flash.danger"
       render :new
     end
   end
@@ -55,6 +56,6 @@ class UsersController < ApplicationController
 
   def find_user
     @user = User.find_by id: params[:id]
-    redirect_to root_url unless @user.present?
+    redirect_to root_url if @user.blank?
   end
 end

@@ -51,8 +51,12 @@ en:
       users_h1: "Sign up"
       p_content: "This will be a signup page for new users."
     flash:
-      success: "Welcome to Sample App"
+      success: "Welcome to Sample app"
+      info: "Please check your email to activate your account."
       danger: "Have a few errors!"
+      activated_success: "Account activated!"
+      activated_fail: "Invalid activation link"
+      messages_activated: "Account not activated.Check your email for the activation link."
       to_login: "Please log in"
       not_found: "User not found!"
       login_faild: "Your email or password are invalid"
@@ -73,3 +77,9 @@ en:
       update: "Update profile"
   gravatar:
     link_gravatar: "http://gravatar.com/emails"
+  mailer:
+    subject: "Account activation"
+    text_welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+    hi_text: "Hi"
+    find_link: "find me in app/views/user_mailer/account_activation.html.erb"
+    title_activate: "Activate"
