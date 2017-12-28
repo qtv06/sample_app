@@ -6,8 +6,10 @@ en:
   base_title: "Ruby on Rails Tutorial Sample App"
   sign_up: "Sign up now!"
   login: "Login"
+  forgot_pass: "forgot password"
   title_header: "Sample app"
   title_logo: "Logo Rails"
+  lable_confirmpass: "Confirmation"
   footer:
     small_content: "The %{first_link} by %{second_link}"
     first_href: "Ruby on Rails Tutorial"
@@ -62,6 +64,7 @@ en:
       login_faild: "Your email or password are invalid"
       update_succ: "Your profile updated"
       delete_succ: "You deleted successful"
+      danger_check_expiration: "Password reset has expired."
     p_new: "New user? %{link_signup}"
     title_signup: "Sign up now!"
     login:
@@ -79,7 +82,17 @@ en:
     link_gravatar: "http://gravatar.com/emails"
   mailer:
     subject: "Account activation"
+    password_reset: "Password reset"
     text_welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
     hi_text: "Hi"
     find_link: "find me in app/views/user_mailer/account_activation.html.erb"
     title_activate: "Activate"
+  password_reset:
+    title: "Forgot password"
+    btn_sub: "Submit"
+    flash_info: "Email sent with password reset instructions"
+    flash_danger: "Email address not found"
+    pass_reset: "Reset password"
+    btn_update: "Update password"
+    pass_not_empty: "can't be empty"
+    reset_succ: "Password has been reset."

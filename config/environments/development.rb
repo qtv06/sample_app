@@ -32,12 +32,12 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :address        => 'smtp.gmail.com',
-    :port           => '587',
+    :address        => "smtp.gmail.com",
+    :port           => "587",
     :authentication => :plain,
-    :user_name      => 'vanquang451@gmail.com',
-    :password       => 'vovanquang12',
-    :domain         => 'gmail.com',
+    :user_name      => ENV["GMAIL_USERNAME"],
+    :password       => ENV["GMAIL_PASSWORD"],
+    :domain         => "gmail.com",
     :enable_starttls_auto => true
   }
   config.action_mailer.perform_caching = false
