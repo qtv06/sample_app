@@ -6,6 +6,7 @@ validates:
 gravatar:
   size: 80
   size_small: 50
+  size_xl: 30
 remember_checked: 1
 iamge_extensions: "image/jpeg,image/gif,image/png"
 image_width: 300

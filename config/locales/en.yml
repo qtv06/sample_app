@@ -45,6 +45,10 @@ en:
       p_content: "Contact the Ruby on Rails Tutorial about the sample app at the %{link_contact}."
       title_link: "contact page"
   users:
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
     title_user: "User"
     title_micropost: "Micropost"
     title_edit: "Edit user"
@@ -105,7 +109,11 @@ en:
   micropost:
     title_post: "Posted %{time} ago."
     title_micro: "micropost"
+    micro_count: "Microposts:"
     placeholder: "Compose new micropost..."
     post: "Post"
     feed: "Micropost feed"
     delete_link: "delete"
+  flowing:
+    flowing_title: "following"
+    flower_title: "followers"
