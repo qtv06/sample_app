@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: duy7xc451
+  api_key: '237281999876954'
+  api_secret: 4rjo1Fia5hze4eYMdPeO0wlcP3U
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: duy7xc451
+  api_key: '237281999876954'
+  api_secret: 4rjo1Fia5hze4eYMdPeO0wlcP3U
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: duy7xc451
+  api_key: '237281999876954'
+  api_secret: 4rjo1Fia5hze4eYMdPeO0wlcP3U
+  enhance_image_tag: true
+  static_image_support: false

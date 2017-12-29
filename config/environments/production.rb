@@ -54,12 +54,20 @@ Rails.application.configure do
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
 
-  # Use a different cache store in production.
-  # config.cache_store = :mem_cache_store
-
-  # Use a real queuing backend for Active Job (and separate queues per environment)
-  # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "sample_app_#{Rails.env}"
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  host = "sampleapp-vvq12.herokuapp.com"
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { host: host }
+  ActionMailer::Base.smtp_settings = {
+    :address        => "smtp.gmail.com",
+    :port           => "587",
+    :authentication => :plain,
+    :user_name      => ENV["GMAIL_USERNAME"],
+    :password       => ENV["GMAIL_PASSWORD"],
+    :domain         => "gmail.com",
+    :enable_starttls_auto => true
+  }
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.

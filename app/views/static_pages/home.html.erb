@@ -1,8 +1,25 @@
-<div class="content">
-  <h1><%= t ".home_h1" %></h1>
-  <p><%= t(".p_content", link_home: link_to(t(".title_link"), t(".link_href"))).html_safe %></p>
-  <div class="btn-sign-up">
-    <%= link_to t("sign_up"), new_user_path %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_infor">
+          <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+          <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h2><%= t "micropost.feed" %></h2>
+      <%= render "shared/feed" %>
+    </div>
   </div>
-</div>
-<%= image_tag("logorails.png", alt: t("title_logo"), id: "img-logo") %>
+<% else %>
+  <div class="content">
+    <h1><%= t ".home_h1" %></h1>
+    <p><%= t(".p_content", link_home: link_to(t(".title_link"), t(".link_href"))).html_safe %></p>
+    <div class="btn-sign-up">
+      <%= link_to t("sign_up"), new_user_path %>
+    </div>
+  </div>
+  <%= image_tag("logorails.png", alt: t("title_logo"), id: "img-logo") %>
+<% end %>

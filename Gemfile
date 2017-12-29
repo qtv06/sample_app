@@ -7,7 +7,6 @@ end
 
 
 gem "rails", "~> 5.1.4"
-gem "mysql2", ">= 0.3.18", "< 0.5"
 gem "puma", "~> 3.7"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
@@ -19,6 +18,11 @@ gem "config"
 gem "rails-controller-testing"
 gem "faker", "1.7.3"
 gem "will_paginate", "3.1.6"
+gem "carrierwave", "1.1.0"
+gem "mini_magick", "4.7.0"
+gem "cloudinary"
+gem "fog-aws", "2.0.0"
+gem "nokogiri", "1.8.1"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "rubocop", require: false
 gem "coffee-rails", "~> 4.2"
@@ -26,6 +30,7 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 
 group :development, :test do
+  gem "mysql2", ">= 0.3.18", "< 0.5"
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
@@ -42,5 +47,8 @@ group :development do
   gem "spring-watcher-listen", "~> 2.0.0"
 end
 
+group :production do
+  gem 'pg', '0.18.4'
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

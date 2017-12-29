@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.paginate page: params[:page]
     return if @user
     flash.now[:danger] = I18n.t "users.flash.not_found"
     redirect_to root_path
