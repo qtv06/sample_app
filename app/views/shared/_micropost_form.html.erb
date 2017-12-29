@@ -1,0 +1,10 @@
+<%= simple_form_for(@micropost) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <div class="field">
+    <%= f.input :content, as: :text, placeholder: t("micropost.placeholder") %>
+  </div>
+  <%= f.button :submit, t("micropost.post"), class: "btn btn-primary" %>
+  <span class="picture">
+    <%= f.input_field :picture %>
+  </span>
+<% end %>
